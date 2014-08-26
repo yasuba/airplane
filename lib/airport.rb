@@ -30,8 +30,17 @@ class Airport
 	end
 
 	def full?
-		@planes.count == DEFAULT_CAPACITY
+		planes_count == capacity
 	end
+
+	def capacity
+		@capacity ||= DEFAULT_CAPACITY
+	end
+	
+	def capacity=(value)
+		@capacity = value
+	end
+
 
 
 end

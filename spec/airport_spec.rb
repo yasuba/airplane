@@ -72,12 +72,12 @@ describe Airport do
 
 	context 'regarding the weather' do
 
-		it 'should not allow planes to take off in bad weather' do
+		it 'should not allow planes to take off in strong winds' do
 			windy
 			expect(lambda{gatwick.departures(plane)}).to raise_error
 		end
 
-		it 'should not allow planes to land in bad weather' do
+		it 'should not allow planes to land in strong winds' do
 			windy
 			expect(lambda{gatwick.arrivals(plane)}).to raise_error
 		end
