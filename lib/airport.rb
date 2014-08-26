@@ -17,7 +17,6 @@ class Airport
 	end
 
 	def arrivals(plane)
-		puts weather_report.inspect
 		raise "All our runways are in use." if full?
 		raise "All flights have been rerouted due to adverse weather conditions." if weather_report == 'windy'
 		@planes << plane
@@ -26,7 +25,7 @@ class Airport
 
 	def departures(plane)
 		raise "All flights cancelled due to adverse weather conditions." if weather_report == 'windy'
-		@planes.pop
+		@planes.delete(plane)
 		plane.fly! 
 	end
 
