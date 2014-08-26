@@ -1,11 +1,9 @@
 class Plane
 
+	attr_reader :flight
+
 	def initialize
 		fly!
-	end
-
-	def flight
-		@flight
 	end
 
 	def land!

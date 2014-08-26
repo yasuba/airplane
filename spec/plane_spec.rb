@@ -22,14 +22,13 @@ describe Plane do
 
 	end
 
-	context 'preparing for take-off' do
-
-		xit 'should change flight status to flying after take off' do
-			allow(airport).to receive(:departures).with(plane).and_return(:flying)
-			plane.fly_from(airport)
+	context 'in flight' do
+		
+		it 'should have a flying status' do
+			plane.fly!
 			expect(plane.flight).to eq :flying
 		end
-
+		
 	end
 
 end
