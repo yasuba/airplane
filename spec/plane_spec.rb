@@ -2,7 +2,7 @@ require 'plane'
 
 describe Plane do
 
-	let(:plane) {Plane.new}
+	let(:plane)   {Plane.new}
 	let(:airport) {double :airport}
 
 	context 'when it is initialized' do
