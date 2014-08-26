@@ -31,6 +31,7 @@ class Airport
 
 	def full?
 		planes_count == capacity
+
 	end
 
 	def capacity
