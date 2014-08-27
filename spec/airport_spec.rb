@@ -52,13 +52,17 @@ describe Airport do
 		end
 
 		it 'should know when it is full' do
-			fill_airport(gatwick)
+			plane2 = Plane.new
+			gatwick.arrivals(plane)
+			gatwick.arrivals(plane2)
 			expect(gatwick).to be_full
 		end
 
-		it 'should not allow planes to land when it is full' do
+		it 'should force planes to take off when it is full' do
 			fill_airport(gatwick)
-			expect(lambda { gatwick.arrivals(plane) }).to raise_error
+			plane1 = Plane.new
+			gatwick.arrivals(plane1)	
+			expect(gatwick.scramble)
 		end
 
 	end

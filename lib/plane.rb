@@ -1,3 +1,4 @@
+require './lib/airport'
 class Plane
 
 	attr_reader :flight
