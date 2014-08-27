@@ -19,7 +19,6 @@ class Airport
 	end
 
 	def arrivals(plane) 
-		# raise 'No more runways available.' if full?
 		raise "All flights have been rerouted due to adverse weather conditions." if weather_report == 'windy'
 		@planes << plane
 		plane.land!
