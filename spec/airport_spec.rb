@@ -52,9 +52,7 @@ describe Airport do
 		end
 
 		it 'should know when it is full' do
-			plane2 = Plane.new
-			gatwick.arrivals(plane)
-			gatwick.arrivals(plane2)
+			fill_airport(gatwick)
 			expect(gatwick).to be_full
 		end
 
