@@ -6,4 +6,5 @@ The challenge is to write software to control the flow of planes at an airport. 
 
 The airport has a limited number of runways, so when they are all full all the planes landed at the aiport must take off. Once the planes are in the air, they must have a flying status.
 
-  
+##Technologies
+The goal of this challenge was to use doubles while testing and also to create a random weather generator, which I did with the ruby method sample. Testing was done with RSpec.
