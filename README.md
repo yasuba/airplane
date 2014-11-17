@@ -13,7 +13,7 @@ The goal of this challenge was to practice coding with Ruby, to use doubles whil
 
     git clone git@github.com:yasuba/airplane.git
     cd airplane
-    pry / irb
+    pry
     require './lib/plane.rb'
 
 Once the plane.rb file has been required, you can create instances of planes and airports, then play around with the various methods such as airport.arrivals(plane)
