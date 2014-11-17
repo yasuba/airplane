@@ -7,4 +7,19 @@ The challenge is to write software to control the flow of planes at an airport. 
 The airport has a limited number of runways, so when they are all full all the planes landed at the aiport must take off. Once the planes are in the air, they must have a flying status.
 
 ##Technologies
-The goal of this challenge was to use doubles while testing and also to create a random weather generator, which I did with the ruby method sample. Testing was done with RSpec.
+The goal of this challenge was to practice coding with Ruby, to use doubles while testing and also to create a random weather generator, which I did with the Ruby method sample. Testing was done with RSpec.
+
+##Running the software
+
+    git clone git@github.com:yasuba/airplane.git
+    cd airplane
+    pry / irb
+    require './lib/plane.rb'
+
+Once the plane.rb file has been required, you can create instances of planes and airports, then play around with the various methods such as airport.arrivals(plane)
+
+##Running the tests
+
+    cd airplane
+    rspec
+
